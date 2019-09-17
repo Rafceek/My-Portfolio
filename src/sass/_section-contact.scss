@@ -1,0 +1,133 @@
+.contact {
+  @include section-style;
+}
+
+.contact__title {
+  @include h2-style;
+  @include mobile-h2;
+
+  i {
+    @include i-style;
+  }
+}
+
+.contact__request {
+  font-size: 1.7em;
+  text-align: center;
+  padding: 10px;
+  color: #55acee;
+  opacity: 0.9;
+
+  @media #{$mobile} {
+    font-size: 2.2em;
+  }
+
+  @media #{$tablet} {
+    font-size: 2.7em;
+  }
+}
+
+.contact__message {
+  margin: 0 auto;
+}
+
+.message {
+  width: 80%;
+  height: auto;
+  @include flex-center;
+  flex-direction: column;
+
+  @media #{$mobile} {
+    width: 75%;
+  }
+
+  @media #{$tablet} {
+    width: 70%;
+  }
+
+  @media #{$desktop} {
+    width: 50%;
+  }
+
+}
+
+.message__input {
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
+  border: 2px solid white;
+  border-radius: 3px;
+  font-size: 1.5em;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.800);
+  @include input-background;
+
+  @media #{$mobile} {
+    padding: 10px;
+    font-size: 1.7em;
+  }
+
+  @media #{$tablet} {
+    font-size: 2em;
+    // padding: 15px;
+  }
+
+}
+
+.message__input--textarea {
+  height: 150px;
+  resize: none;
+
+  @media #{$mobile} {
+    height: 200px;
+  }
+
+  @media #{$tablet} {
+    height: 300px;
+  }
+
+}
+
+.message__buttons {
+  width: 100%;
+  @include flex-center;
+  justify-content: space-around;
+
+  @media #{$mobile} {
+    font-size: 1.2em;
+  }
+}
+
+.message__submit {
+  @include submit-reset;
+}
+
+.message__reset {
+  @include submit-reset;
+}
+
+
+.message__input::-webkit-input-placeholder {
+  @include placeholder;
+}
+
+.message__input:focus::-webkit-input-placeholder {
+  @include hide-placeholder;
+}
+
+.message__input::-moz-placeholder {
+  @include placeholder;
+}
+
+.message__input:focus::-moz-placeholder {
+  @include hide-placeholder;
+}
+
+.message__input::-ms-placeholder {
+  @include placeholder;
+}
+
+.message__input:focus::-ms-placeholder {
+  @include hide-placeholder;
+}

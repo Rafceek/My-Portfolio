@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description"
+    content="My Portffolio page. Come and check my skills in Front-End Development. I can make a functional and good looking web page for your company.">
+  <link rel="stylesheet" href="src/css/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="icon" href="src/img/favicon1.ico" type="image/x-icon">
+  <title>Rafał Jenda | Portfolio</title>
+</head>
+
+<body class="page">
+  <div id="burger" class="burger">
+    <span class="burger__span"></span>
+    <span class="burger__span"></span>
+    <span class="burger__span"></span>
+  </div>
+  <div id="hello" class="hello"></div>
+  <header class="header">
+    <h1 class="header__heading"><span class="header__greetings">Hi, I am</span> Rafał Jenda</h1>
+    <p class="header__profession">Front-End Developer</p>
+    <div class="header__scroll scroll">
+      <div class="scroll__see-more" id="see-more">see more</div>
+      <div class="scroll__arrow" id="arrow">
+        <i class="fas fa-angle-down"></i>
+      </div>
+    </div>
+  </header>
+  <nav id="navi" class="navi">
+    <a id="link1" class="navi__link link" href="#">about me</a>
+    <a id="link2" class="navi__link link" href="#">skills</a>
+    <a id="link3" class="navi__link link" href="#">projects</a>
+    <a id="link4" class="navi__link link" href="#">contact</a>
+    <a id="link5" class="navi__link link" href="#">socials</a>
+  </nav>
+  <i id="up-to-top" class="up-to-top fas fa-chevron-circle-up" style="display: none;"></i>
+  <main class="main">
+    <section class="about-me">
+      <h2 class="about-me__title" id="about-me"><i class="far fa-address-card"></i>about me</h2>
+      <div class="about-me__desktop">
+        <div class="about-me__img-box"><img class="about-me__image" src="src/img/ja_49.jpg" alt="Author of the page">
+        </div>
+        <p class="about-me__info">Hey! My name is <strong class="about-me__info--name">Rafał
+            Jenda</strong>
+          . I am 25 years old and I live in Białystok, Poland. I love web design and programming so i decided
+          to be a front-end developer. If you would like to have your own website that allow you to advertise
+          your business online, you've come to the right place. I'll help you.<br><br>
+          Check out my portfolio and find out if I am the right person who will
+          create for you an ideal website only looks modern but is also functional and user-friendly. Hope to
+          see you soon!</p>
+      </div>
+    </section>
+    <section class="skills">
+      <h2 class="skills__title" id="skills"><i class="fas fa-brain"></i></i>skills</h2>
+      <div class="skills__desktop">
+        <div class="skills__mastery">
+          <div class="skills__icon" title="HTML5"><i class="fab fa-html5"></i></div>
+          <div class="skills__tech">
+            <p class="technology">HTML5</p>
+          </div>
+        </div>
+        <div class="skills__mastery">
+          <div class="skills__icon" title="CSS3"><i class="fab fa-css3-alt"></i></div>
+          <div class="skills__tech">
+            <p class="technology">CSS3</p>
+          </div>
+        </div>
+        <div class="skills__mastery">
+          <div class="skills__icon" title="Java Script"><i class="fab fa-js-square"></i></div>
+          <div class="skills__tech">
+            <p class="technology">JS</p>
+          </div>
+        </div>
+        <div class="skills__mastery">
+          <div class="skills__icon" title="React"><i class="fab fa-react"></i></div>
+          <div class="skills__tech">
+            <p class="technology">REACT</p>
+          </div>
+        </div>
+        <div class="skills__mastery">
+          <div class="skills__icon" title="SASS"><i class="fab fa-sass"></i></div>
+          <div class="skills__tech">
+            <p class="technology">SASS</p>
+          </div>
+        </div>
+        <div class="skills__mastery">
+          <div class="skills__icon" title="Responsive Web Design"><i class="fas fa-mobile-alt"></i></div>
+          <div class="skills__tech">
+            <p class="technology">RWD</p>
+          </div>
+        </div>
+        <div class="skills__mastery">
+          <div class="skills__icon" title="Gulp"><i class="fab fa-gulp"></i></div>
+          <div class="skills__tech">
+            <p class="technology">GULP</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects">
+      <h2 class="projects__title" id="projects"><i class="fas fa-project-diagram"></i>my projects</h2>
+      <div class="projects__design">
+        <div class="projects__image" alt="project number one">Project 1</div>
+        <div class="projects__buttons buttons">
+          <button class="buttons__live button"><i class="fab fa-github"></i></button>
+          <button class="buttons__live button"><i class="fas fa-external-link-alt"></i></button>
+        </div>
+      </div>
+      <div class="projects__design">
+        <div class="projects__image" alt="project number one">Project 2</div>
+        <div class="projects__buttons buttons">
+          <button class="buttons__live button"><i class="fab fa-github"></i></button>
+          <button class="buttons__live button"><i class="fas fa-external-link-alt"></i></button>
+        </div>
+      </div>
+      <!-- add links for to github projects -->
+      <div class="projects__design">
+        <div class="projects__image" alt="project number one">Project 3</div>
+        <div class="projects__buttons buttons">
+          <button class="buttons__live button"><i class="fab fa-github"></i></button>
+          <button class="buttons__live button"><i class="fas fa-external-link-alt"></i></button>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <h2 class="contact__title" id="contact"><i class="far fa-comment-dots"></i>contact</h2>
+      <h3 class="contact__request">Write to Me. I'll reply as soon as possible!</h3>
+      <form action="#" method="POST" class="contact__message message">
+        <input class="message__input" type="text" name="fullName" placeholder="Name ex. Rafał" required>
+        <input class="message__input" type="email" placeholder="Email ex. example99@gmail.com" required
+          autocomplete="on">
+        <input class="message__input" type="tel" placeholder="phone number ex. 000 000 000">
+        <textarea class="message__input message__input--textarea" placeholder="Message" required></textarea>
+        <br />
+        <div class="message__buttons">
+          <input class="message__submit" type="submit" value="Send">
+          <input class="message__reset" type="reset" value="Reset">
+        </div>
+      </form>
+    </section>
+    <section class="socials">
+      <h2 class="socials__title" id="socials"><i class="fas fa-users"></i>socials</h2>
+      <div class="socials__icons icons">
+        <a class="icons__link" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        <a class="icons__link" href="https://www.github.com/" target="_blank"><i class="fab fa-github-square"></i></a>
+        <a class="icons__link" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a class="icons__link" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a class="icons__link" href="https://www.snapchat.com/" target="_blank"><i class="fab fa-snapchat-square"></i></a>
+        <a class="icons__link" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube-square"></i></a>
+    </section>
+  </main>
+  <footer class="footer">
+    Rafał Jenda - Front-End Dev 2019 &copy All Rights Reserved
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="typed.js/typed.js-master/lib/typed.js"></script>
+  <script src="src/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+.navi {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2.4rem;
+    transition: .2s .2s;
+    overflow: hidden;
+    background: linear-gradient(rgb(158, 96, 147), rgb(173, 133, 96), rgba(148, 215, 224, 1));
+    text-align: center;
+    z-index: 3;
+
+    &.active {
+        left: 0%;
+        z-index: 3;
+
+        @media #{$desktop} {
+            left: 50%;
+        }
+    }
+
+    @media #{$mobile} {
+        font-size: 2.7rem;
+    }
+
+    @media #{$tablet} {
+        font-size: 3.5rem;
+    }
+
+    @media #{$desktop} {
+        left: 50%;
+        flex-wrap: nowrap;
+        height: 10%;
+        max-width: 1200px;
+        transform: translateX(-50%);
+        background: linear-gradient(to right, rgb(7, 63, 119), rgb(94, 12, 141));
+        opacity: 0.8;
+    }
+}
+
+.navi__link {
+    @include flex-center;
+    flex-basis: 100%;
+    transition: .3s;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $burger-color;
+    text-shadow: 1px 1px rgb(41, 161, 209);
+
+    @media #{$desktop} {
+        color: $olor-h1;
+        text-shadow: 2px 1px rgb(12, 17, 19);
+    }
+
+    &:hover {
+        background: linear-gradient(lightblue, cadetblue);
+        color: $color-p;
+        text-shadow: 1px 1px black;
+        border-radius: 2px;
+        font-weight: bold;
+    }
+}
+
+.link {
+
+    &:link,
+    &:visited,
+    &:active {
+        text-decoration: none;
+    }
+}

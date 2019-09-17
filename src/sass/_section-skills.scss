@@ -1,0 +1,93 @@
+.skills {
+    @include section-style;
+}
+
+.skills__desktop {
+    @include flex-center;
+    flex-direction: column;
+
+    @media #{$tablet} {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.skills__title {
+    @include h2-style;
+    @include mobile-h2;
+
+    .fa-brain {
+        @include i-style;
+    }
+}
+
+.skills__mastery {
+    @include flex-center;
+    justify-content: space-between;
+    width: 75%;
+    height: 25%;
+    padding: 3%;
+    font-size: 2.2em;
+
+    @media #{$mobile} {
+        font-size: 2.8em;
+    }
+
+    @media #{$tablet} {
+        width: 33.3%;
+        height: 25%;
+    }
+}
+
+.skills__icon {
+    width: 50%;
+    height: 20%;
+    text-align: center;
+    @include flex-center;
+
+    i {
+        padding-right: 5%;
+        font-size: 3em;
+
+        &.fa-html5 {
+            color: #EE5F25;
+        }
+
+        &.fa-css3-alt {
+            color: #0C6AA7;
+        }
+
+        &.fa-js-square {
+            color: #F7E018;
+        }
+
+        &.fa-react {
+            color: #4AD5FF;
+        }
+
+        &.fa-sass {
+            color: #CC6699;
+        }
+
+        &.fa-mobile-alt {
+            color: rgb(77, 214, 95);
+        }
+
+        &.fa-gulp {
+            color: #EE4746;
+        }
+
+    }
+}
+
+.skills__tech {
+    width: 50%;
+    height: 20%;
+    text-align: center;
+
+    .technology {
+        @include flex-center;
+        font-weight: bold;
+        color: $text-color;
+    }
+}

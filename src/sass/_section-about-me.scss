@@ -1,0 +1,65 @@
+.about-me {
+    @include section-style;
+    margin-top: 100vh;
+}
+
+.about-me__desktop {
+    @media #{$tablet} {
+        @include flex-center;
+        flex-direction: row;
+    }
+}
+
+.about-me__title {
+    @include h2-style;
+    @include mobile-h2;
+    margin-top: 0;
+
+    i {
+        @include i-style;
+    }
+}
+
+.about-me__img-box {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.about-me__image {
+    border-radius: 20%;
+    width: 60%;
+    margin: 20px 0;
+
+    @media #{$mobile} {
+        width: 70%;
+    }
+
+    @media #{$tablet} {
+        width: 80%;
+    }
+}
+
+.about-me__info {
+    text-align: justify;
+    font-size: 1.6rem;
+    padding: 0 15px 0 15px;
+    color: $text-color;
+
+    @media #{$mobile} {
+        font-size: 1.8rem;
+    }
+
+    @media #{$tablet} {
+        width: 100%;
+        padding: 10px 15px 10px 0px;
+        font-size: 2.1rem;
+    }
+}
+
+.about-me__info--name {
+    color: rgba(51, 149, 206, 0.97);
+    text-transform: uppercase;
+    text-shadow: 3px -1px 2px rgb(20, 16, 16);
+}
